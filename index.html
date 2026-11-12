@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Agenda</title>
+</head>
+<body>
+    <h1>Minha Agenda</h1>
+
+    <script>
+        let minhaAgenda = ['4 -Acordar ', '\n 4:30 -Banho', '\n 5:45 -Trocar', '\n 5 -Café da Manhã', '\n 6- Pegar ônibus', '\n 7-Escola', '\n 11-Almoço'];
+        console.log(`Itens da Agenda: ${minhaAgenda}`);
+
+        // Length
+        minhaAgenda.length;
+        console.log(`Há ${minhaAgenda.length} itens pendentes em sua agenda`);
+
+        // Adicionar tarefa urgente
+        minhaAgenda.push('\n 12-Ir no Mercado');
+        console.log(`Tarefa urgente: ${minhaAgenda}`);
+
+        // "Organizando" por ordem de tarefas
+        minhaAgenda.sort();
+        console.log(`Lista em ordem: ${minhaAgenda}`);
+
+        // Removendo o primeiro item do Array
+        minhaAgenda.shift();
+        console.log(`Agenda ápos o primeiro item ser comprido: ${minhaAgenda}`); // Almoço removido
+
+        // Removendo o último item do Array
+        minhaAgenda.pop();
+        console.log(`Agenda ápos o último item ser comprido: ${minhaAgenda}`); // Acordar removido
+
+        // Removendo um item do meio
+        minhaAgenda.splice(3, 1);
+        console.log(`${minhaAgenda}`);
+
+
+    </script>
+
+</body>
+</html>
